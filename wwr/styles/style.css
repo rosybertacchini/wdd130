@@ -1,5 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,200;1,700&family=Koh+Santepheap:wght@300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
 body {
   background-color: #aabd8c;
+  font-family: "Lobster Koh Santepheap", Helvetica, sans-serif;
+  font-size: 22px;
+  margin: 0;
+  padding: 0;
 }
 
 #content {
@@ -8,9 +14,8 @@ body {
   margin: 0 auto;
 }
 nav a {
-  text-align: center;
-  color: #ffffcf;
   text-decoration: none;
+  padding: 35px;
 }
 #hero-img {
   width: 100%;
@@ -19,7 +24,9 @@ nav a {
 #hero-msg h4 {
   text-align: center;
 }
-
+img {
+  box-sizing: border-box;
+}
 .button-box {
   text-align: center;
 }
@@ -36,15 +43,18 @@ nav a:hover,
 .join:hover {
   background-color: #aabd8c;
   color: #ffffcf;
+  padding: 35px;
 }
-footer {
-  background-color: #aabd8c;
-  font-size: 1.2em;
-}
+
 .book,
 .join {
   background-color: #396e2d;
+  color: #ffffcf;
   text-decoration: none;
+  font-size: 18px;
+  padding: 15px 30px;
+  margin-top: 50px;
+  border-radius: 5px;
 }
 
 header {
@@ -57,14 +67,21 @@ header {
 .msg {
   background-color: #396e2d;
   text-align: center;
+  padding: 35px;
 
   text-decoration: none;
 }
 .msg h2 {
   background-color: #396e2d;
+  font-family: "Koh Santepheap", Helvetica, sans-serif;
+
+  margin: 0;
 }
 .msg p {
   color: #163384;
+  font-size: 0.8em;
+  line-height: 1.5em;
+  padding-bottom: 15px;
 }
 h4 {
   color: #163384;
@@ -73,19 +90,52 @@ h4 {
 .home-title {
   text-align: center;
   color: #163384;
+  font-family: "Lobster", Helvetica, sans-serif;
+  font-size: 2em;
+  margin-top: 10px;
 }
 .icon {
   width: 80px;
+  padding-top: 10px;
 }
 .logo {
   width: 80px;
+  padding-top: 5px;
+}
+#logo_link {
+  padding: 35px;
+}
+.rivers-card,
+.camping-card,
+.rapids-card {
+  margin: 200px 0;
+}
+footer {
+  background-color: #aabd8c;
+  font-size: 1.2em;
+  padding: 25px 50px;
+  margin-top: 200px;
 }
 
 footer p a:hover {
   text-decoration: underline;
+  padding-top: 15px;
 }
-/*
 
+.card-img {
+  margin: 0;
+  border: 10px solid #ffffcf;
+}
 
+section {
+  box-sizing: border-box;
+}
 
-*/
+footer .social img {
+  padding-top: 15px;
+}
+
+.mountains{
+  margin: 100px;
+
+}
