@@ -1,8 +1,9 @@
-a @import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,200;1,700&family=Koh+Santepheap:wght@300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,200;1,700&family=Koh+Santepheap:wght@300;400&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
 body {
   background-color: #aabd8c;
-  font-family: "Lobster Koh Santepheap", Helvetica, sans-serif;
+
+  font-family: serif;
   font-size: 22px;
   margin: 0;
   padding: 0;
@@ -17,6 +18,7 @@ header {
   display: grid;
   grid-template-columns: 90px auto;
   background-color: rgba(57, 110, 45, 0.5);
+  color: #396e2d;
 }
 
 nav a {
@@ -33,8 +35,10 @@ nav {
 
 nav a:hover,
 .join:hover {
-  background-color: #aabd8c;
-  color: #ffffcf;
+  color: #396e2d;
+  /* background-color: #aabd8c; */
+  background-color: #ffffcf;
+
   padding: 35px;
   display: flex;
   justify-content: space-around;
@@ -109,7 +113,7 @@ img {
 }
 .msg h2 {
   background-color: #396e2d;
-  font-family: "Koh Santepheap", Helvetica, sans-serif;
+  font-family: "Lobster", "Koh Santepheap", Helvetica, sans-serif;
 
   margin: 0;
 }
@@ -192,7 +196,8 @@ section {
 }
 
 footer {
-  background-color: #aabd8c;
+  background-color: #9eaf82;
+
   padding: 25px 50px;
   margin-top: 200px;
   display: flex;
@@ -206,10 +211,78 @@ footer p a:hover {
 
 footer .social img {
   padding-top: 15px;
+
   background-color: #ffffcf;
+
   padding: 25px 50px;
   margin-top: 25px;
 }
+/* ************************************************************* */
+/* Styles for FAQ page */
+
+.content1 {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  justify-items: center;
+  gap: 20px;
+  background-color: rgb(57, 110, 45, 0.8);
+}
+#faq_title {
+  color: #ffffcf;
+  font-weight: bold;
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+#faq_search-box {
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+
+#faq_popular-title {
+  color: #ffffcf;
+  font-weight: bold;
+  padding-left: 30px;
+}
+p faq_p,
+ul,
+li {
+  color: #ffffcf;
+  font-family: sans-serif;
+  font-size: 0.8em;
+}
+
+#faq_image_box {
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+
+input {
+  margin: 20px;
+}
+
+/* - - - - - - -  - */
+.faq_header {
+  display: grid;
+  grid-template-columns: 90px auto;
+  background-color: #aabd8c;
+}
+.faq_a:hover {
+  background-color: #ffffcf;
+  padding: 35px;
+  display: flex;
+  justify-content: space-around;
+  color: #396e2d;
+}
+.faq_footer {
+  background-color: #9eaf82;
+  padding: 25px 50px;
+  /*margin-top: 200px; */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/* ************************************************************** */
 
 /* Responsive */
 @media screen and (max-width: 900px) {
@@ -258,43 +331,48 @@ footer .social img {
 }
 
 @media screen and (max-width: 900px) {
-  #hero, .home-grid {
-      display: block;
-      height: auto;
+  #hero,
+  .home-grid {
+    display: block;
+    height: auto;
   }
-  nav, footer {
-      flex-direction: column;
+  nav,
+  footer {
+    flex-direction: column;
   }
   nav a {
-      display: block;
-      padding: 15px;
+    display: block;
+    padding: 15px;
   }
   #hero {
-      margin-top: 0;
+    margin-top: 0;
   }
   #hero-msg {
-      margin-top: 0;
+    margin-top: 0;
   }
   #hero-msg h4 {
-      display: none;
+    display: none;
   }
   .home-title {
-      font-size: 25px;
-      color: #6f7364;
+    font-size: 25px;
+    color: #6f7364;
   }
-  .rivers-card, .camping-card, .rapids-card { 
-      margin: 50px auto;
-      width: 60%;
+  .rivers-card,
+  .camping-card,
+  .rapids-card {
+    margin: 50px auto;
+    width: 60%;
   }
   #background {
-      display: none;
+    display: none;
   }
-  .mountains, .msg {
-      width: 80%;
-      display: block;
-      margin: 0 auto;
+  .mountains,
+  .msg {
+    width: 80%;
+    display: block;
+    margin: 0 auto;
   }
   footer {
-      margin-top: 25px;
+    margin-top: 25px;
   }
 }
