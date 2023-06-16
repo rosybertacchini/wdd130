@@ -225,7 +225,7 @@ footer .social img {
   grid-template-columns: 2fr 1fr;
   justify-items: center;
   gap: 20px;
-  background-color: rgb(57, 110, 45, 0.8);
+  background-color: rgb(57, 110, 45, 0.2);
 }
 #faq_title {
   color: #ffffcf;
@@ -264,7 +264,8 @@ input {
 .faq_header {
   display: grid;
   grid-template-columns: 90px auto;
-  background-color: #aabd8c;
+  background-color: rgba(57, 110, 45, 0.9);
+  color: #396e2d;
 }
 .faq_a:hover {
   background-color: #ffffcf;
@@ -275,10 +276,10 @@ input {
 }
 .faq_footer {
   background-color: #9eaf82;
-  padding: 25px 50px;
-  /*margin-top: 200px; */
+  /* padding: 25px 50px; */
+  margin: 0px;
   display: flex;
-  justify-content: space-around;
+  /* justify-content: space-around; */
   align-items: center;
 }
 
