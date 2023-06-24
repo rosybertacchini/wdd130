@@ -399,6 +399,15 @@ li {
   padding-top: 100px;
 
 }
+.faq_image {
+   border: 10px solid #ffffcf;
+}
+
+.faq_image:hover {
+  opacity: 0.6;
+  transform: scale(1.1);
+}
+
 
 input {
   margin: 20px;
