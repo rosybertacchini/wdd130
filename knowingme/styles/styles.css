@@ -20,6 +20,8 @@ body {
   max-width: 1200px;
   margin: 0 auto;
 }
+
+/*  ********************************* Header *********************************  */
 #header-grid {
   display:grid;
   grid-template-columns:  repeat(5, 1fr);
@@ -62,6 +64,9 @@ nav {
   justify-content: space-around;
   text-decoration: none;
 }
+a {
+  color :white;
+}
 nav a:hover :visited {
   color:  RGB(120,61,89,.57);
   /* background-color: #aabd8c; */
@@ -79,22 +84,75 @@ text-decoration: none;
 #logo {
    width: 200px;
 }
+
+/*  ********************************* Main *********************************  */
+#main-grid{
+  display: grid;
+  padding: 5px;
+  grid-template-columns: repeat(10 1fr);
+  gap : 15px;
+
+}
+#home-text {
+  grid-column: 1/10;
+  grid-row:  1/2;
+}
+
 p {
     font-family: Merienda;
-    padding: 0 35px;;
+    padding: 0 35px;
 }
-section#images {
+
+#images {
   box-sizing: border-box;
   text-align: center;
-  
+}
+
+
+#picture1-box{
+  grid-column: 2/5;
+  grid-row: 2/3;
+}
+#picture2-box{
+  grid-column: 6/9;
+  grid-row: 2/3;
+}
+#picture1:hover , #picture2:hover {
+  opacity: 0.9;
+  /* transform: scale(1.05); */
+  grid-column: 6/9; 
+  grid-row: 2/3; 
   
 }
 
-#picture1 #picture2{
-  transition: transform 0.5s;
-  box-shadow: 5px 5px 10px #6f7364;
+#picture1-box , #picture2-box {
+
+  background-color: #396E94;
+  padding: 15px
+
 }
-#picture1:hover , #picture2:hover {
-  opacity: 0.6;
-  transform: scale(1.1);
+
+/*  ********************************* Footer *********************************  */
+
+footer {
+  background-color: RGB(120,61,89,.57);
+  color:white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: RGB(120,61,89,.57);
+  padding: 15px;
+  color :white;
+  margin : 20px;
+}
+footer p a:hover {
+  text-decoration: underline;
+  padding-top: 15px;
+}
+
+footer .social img {
+  padding-top: 15px;
+  background-color: #ffffcf;
+  padding: 10px;
+  margin-top: 10px;
 }
