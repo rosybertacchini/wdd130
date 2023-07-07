@@ -82,7 +82,7 @@ nav a:hover :visited {
 #main-grid {
   display: grid;
   padding: 5px;
-  grid-template-columns: repeat(10 1fr);
+  grid-template-columns: repeat(10, 1fr);
   gap: 15px;
 }
 #home-text {
